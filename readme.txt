@@ -1,9 +1,3 @@
-TODO:
-add (print), only in replacement.
-- think it will print whatevers in res, but idk.
-- possibly add to stack?
-- need way to "hide" information
-
 Program is a Markov Algorithm
 Lots of inspiration from the puzzle game A=B
 
