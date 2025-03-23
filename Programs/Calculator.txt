@@ -1,0 +1,34 @@
+# UNFINISHED/ABANDONED
+
+# handle inputs
+(once)=(print)enter-instruction-{+,-,x,/}
+(once)=(input, end)
+(once)=(end)[
+(once)=(print)enter-left-hand-side
+(once)=(end)UNARY
+(once)=(input, end)
+(once)=(end),
+(once)=(print)enter-right-hand-side
+(once)=(end)UNARY
+(once)=(input, end)
+
+#convert to unary
+*UNARY,=,
+
+UNARY0=XUNARY
+UNARY1=iXUNARY
+UNARY2=iiXUNARY
+UNARY3=iiiXUNARY
+UNARY4=iiiiXUNARY
+UNARY5=iiiiiXUNARY
+UNARY6=iiiiiiXUNARY
+UNARY7=iiiiiiiXUNARY
+UNARY8=iiiiiiiiXUNARY
+UNARY9=iiiiiiiiiXUNARY
+
+iX=Xiiiiiiiiii
+
+X=
+
+#addition
+(start)+=(end)A

@@ -1,0 +1,74 @@
+#prepare (creates a string of '_'s at the end)
+(once)=D
+D*=*E_D
+(end)D={
+E*=(end)*
+
+#^ means success, | means failed
+^^=^
+^|=
+|||||=(return)lose
+
+#init guess
+(once)=IG>
+(once)=(end)[
+
+# printing and checking win
+V=(start)W
+
+F=(start)X
+XX=X
+WX=X
+
+{Y={V
+_Y=Y_P_F
+*Y=Y*P@
+P*=(print)*
+
+X=
+W=(return)win
+
+N=(println)
+
+# add a char from the guess and then the actual, then compare
+K=(start)L
+
+L^=^L
+L|=|L
+L?>R*=?>E*R
+
+# create/compare correct guess string 
+# underscores are replaced, anything else stays
+&_*=*
+&**=*
+
+%*=(end)K&*
+
+R[=(end)Y[
+
+# recieve input
+I=(input)
+
+# process guess
+# move correct guesses to the end
+C*=(end)*$@
+H=(start)^
+
+# finish processing guess
+*G>{=?>}R
+}=(end){
+
+# process next character
+*G>=*G<-
+
+#mark guesses as correct
+*G<-@=HC*@G>
+
+# move incorrect guesses to end
+-*=(end)*$_
+<=>
+
+$=%
+
+# make guess string
+?=|NIG

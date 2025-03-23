@@ -1,0 +1,48 @@
+# for non empty strings
+# (once)=D
+# D*=D
+# D=
+(once)=yI%___|___|___
+
+G*=(start)*I%
+
+# print
+P|=(println)
+P*=(print)*|
+(end)%=(println)
+%*=*P@%
+
+# check win
+# horizontal
+XXX=(return)X-win
+OOO=(return)O-win
+# vertical
+X***X***X=(return)X-win
+O***O***O=(return)O-win
+#diagonal
+X**|*X*|**X=(return)X-win
+O**|*O*|**O=(return)O-win
+**X|*X*|X**=(return)X-win
+**O|*O*|O**=(return)O-win
+
+# complete input
+xM=XGp
+oM=OGy
+x*=*x
+o*=*o
+
+# put placeholder at correct index (account for | and leading num)
+0*=M
+1**=*M
+2***=**M
+3***|*=***|M
+4***|**=***|*M
+5***|***=***|**M
+6***|***|*=***|***|M
+7***|***|**=***|***|*M
+8***|***|***=***|***|**M
+
+I=(input)
+
+y=x
+p=o
